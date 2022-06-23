@@ -9,11 +9,14 @@ export default class App extends React.Component<any, any> {
     render() {
         return (
             <>
+                <h1 className="text-center mt-3">Simple Note Taking React App</h1>
                 <Input/>
-                <Note/>
-                <Note/>
-                <Note/>
+                <Note value={10}/>
+                <Note value={30}/>
+                <Note value={100}/>
             </>
         )
     }
+
+
 }
