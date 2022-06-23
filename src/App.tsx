@@ -2,11 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-   <>
-   </>
-  );
-}
+export default class App extends React.Component<any, any>{
 
-export default App;
+    render() {
+        return undefined;
+    }
+}
