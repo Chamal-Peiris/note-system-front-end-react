@@ -1,0 +1,5 @@
+.Note:hover{
+    cursor: pointer;
+    background-color: #56a0ce;
+    border-radius: 10px;
+}
