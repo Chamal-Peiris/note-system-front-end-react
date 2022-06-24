@@ -12,7 +12,7 @@ export default function Note({noteDTO, onDelete}: {noteDTO: NoteDTO , onDelete:(
     return(
         <div className="Note d-flex justify-content-between p-3">
             <h1>{noteDTO.text}</h1>
-            <img onClick={deleteNote} src="assets/trash-can.png" alt="" style={{width: '40px'}}/>
+            <img onClick={deleteNote} src="/assets/trash-bin.png" alt="" style={{width: '60px'}}/>
         </div>
     );
 }
