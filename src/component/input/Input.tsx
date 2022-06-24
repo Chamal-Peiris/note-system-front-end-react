@@ -1,13 +1,15 @@
 
 import './Input.css';
 import {FormEvent, useRef} from "react";
-export default function Input(){
+export default function Input({onAdd}:{onAdd:(text:string)=>void}){
     const refInputContainer = useRef(null);
     function addNote(e:FormEvent){
         e.preventDefault();
         console.log('add note');
-        (refInputContainer.current! as HTMLInputElement).value='';
-        (refInputContainer.current! as HTMLInputElement).focus();
+        const txtInput=(refInputContainer.current! as HTMLInputElement);
+        onAdd(txtInput.value);
+        txtInput.value='';
+        txtInput.focus();
     }
 
     return(

@@ -2,10 +2,10 @@ import './Note.css';
 import React from "react";
 import {Note as NoteDTO} from "../../dto/Note";
 
-export default function Note({note}:{note:NoteDTO}){
+export default function Note({note,onDelete}:{note:NoteDTO,onDelete:(id:number)=>void}){
 
     function deleteNote(){
-        console.log("Delete Node");
+      onDelete(note.id!);
     }
 
    return(
